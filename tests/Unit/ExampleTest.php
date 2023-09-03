@@ -13,4 +13,19 @@ class ExampleTest extends TestCase
     {
         $this->assertTrue(true);
     }
+
+    public function test_that_Equals(): void
+    {
+        $this->assertEquals('carro', 'carro');
+    }
+
+    public function test_that_NotContains(): void
+    {
+        $this->assertNotContains(7, [1, 2, 3]);
+    }
+
+    public function test_that_StringEndsWith(): void
+    {
+        $this->assertStringEndsWith('lo', 'tijolo');
+    }
 }
